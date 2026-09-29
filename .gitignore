@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# CIFAR-10 batches (download separately)
+data_batch_*
+test_batch
+batches.meta
+
+# Generated output
+img.png
