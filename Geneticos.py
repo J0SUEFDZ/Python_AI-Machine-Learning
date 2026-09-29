@@ -1,5 +1,5 @@
 '''
-Josue Fernandez Diaz - 2013033195
+Josue Fernandez Diaz
 Inteligencia Artificial - José Carranza
 
 '''
@@ -38,7 +38,7 @@ clases = 4
 
 def getData():
     for i in range(1,6):
-        diccionario = unpickle(os.getcwd()+'\\data_batch_'+str(i))
+        diccionario = unpickle(os.path.join(os.getcwd(), 'data_batch_'+str(i)))
         for j in range(len(diccionario[b'data'])):
             if(diccionario[b'labels'][j]<5):
                 labels.append(diccionario[b'labels'][j]-1)
